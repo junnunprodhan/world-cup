@@ -80,7 +80,7 @@ body{
   justify-content: center;
   width: 90%;
   margin-left: 60px;
-}
+} 
 /*================ main section  end=============== */
 
 /*============ sidebar start ============== */
@@ -175,9 +175,15 @@ body{
 .blog-time, .blog-chat{
   color:gray;
 }
- /*============== view all button ============ */
+ /*============== view all button start============ */
+.view-all{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
 
  /*============== view all button end ============ */
+
 /* ===============blogs code end ================== */
 
 /*=============== footer section start ================ */
@@ -225,9 +231,9 @@ hr{
 /* ===========social link end============= */
 /*=============== footer section start ================ */
 
-/*============= medea quaries start =============== */
+/*============= medea queries start =============== */
 
-/* ===========responsive mobile divice start =============== */
+/* ===========responsive mobile device start =============== */
 
 @media only screen and (max-width:688px) {
   .container{
@@ -277,9 +283,9 @@ hr{
     flex-direction: column;
   }
 }
-/* ===========responsive mobile divice end=============== */
+/* ===========responsive mobile device end=============== */
 
-/* ==================rexponsive tab divice start ============================= */
+/* ==================responsive tab device start ============================= */
 @media only screen and (min-width:689px) and (max-width:992px) {
   .container{
     display: flex;
@@ -318,6 +324,9 @@ hr{
     margin: 5px;
     width: 210px;
     height: 70px;
+  }
+  .view-all{
+    display: flex;
   }
   .footer-info{
     gap: 20px;
