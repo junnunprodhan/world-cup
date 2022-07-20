@@ -15,34 +15,52 @@ body{
 
 /* =============top-section section start========== */
 .header-section{
-    display: flex;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-    display: none;
+    background-color: #161616;
+    border-radius: 10px;
+    width: 90%;
     
 }
-.top-section{
-    Width:1321px;
-    Height:646px;
-    border-radius: 20px;
-    display: flex;
-    width: 90%;
-    gap: 40px;
-    background: #161616;
-}
 .header-info{
-    padding: 100px 24px 100px 100px;
-    width: 45%;
+  padding: 100px 0px 100px 100px;
 }
 .header-title{
     color: white;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 4em;
 }
-.header-text{
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 16px;
+.header-discription{
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header-btn{
+  width: 186px;
+  height: 56px;
+  border: none;
+  color: white;
+  background-color: #DD0000;
+  transition: ease-out 0.4s;
+  font-size:20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  outline: none;
+  }
+  .header-btn:hover{
+    box-shadow: inset 186px 0 0 0 #f9e506;
+  }
+.fa-square-arrow-right{
+  color: #FFFFFF;
 }
 .top-img > img{
     height: 100%;
@@ -52,14 +70,8 @@ body{
 .header-btn{
     color:white;
 }
-.header-btn{
-    margin-top:30px;
-    width: 187px;
-    height: 56px;
-    border-radius: 5px;
-    font-size: 20px;
-    background: #DD0000;
-}
+/* =============top-section section END========== */
+
 /*================ main section  start============= */
 .main-section{
   display: flex;
@@ -70,6 +82,7 @@ body{
   margin-left: 60px;
 }
 /*================ main section  end=============== */
+
 /*============ sidebar start ============== */
 .sidebar-menu{
   height: 312px;
@@ -81,7 +94,7 @@ body{
   border-radius: 10px;
 }
 .match-btn, .group-btn{
-  background-color: #FFFFFF;
+  background-color:#E8E8E8;
   width: 252px;
   height: 64px;
   margin-top: 30px;
@@ -94,6 +107,7 @@ body{
 .blog-btn{
   width: 252px;
   height: 64px;
+  color: #E8E8E8;
   background-color: #DD0000;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -106,8 +120,10 @@ body{
 
 /* ===============blogs code start ================== */
 .blogs{
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, 11fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 24px;
   margin-left: 24px;
 }
@@ -143,14 +159,151 @@ body{
 .footer-section{
   background-color: #161616;
   width: 1600px;
-height: 444px;
+  height: 444px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .footer-title{
   color: #FFFFFF;
   text-align: center;
+  margin-bottom: 50px;
 }
+.footer-info{
+  align-items: center;
+}
+
 hr{
-  width: 1320px;
-  height: 0px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 50px;
 }
+.footer-info{
+  color: white;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* ===========social link start============= */
+.social-link{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.fa-facebook-square, .fa-twitter-square, .fa-linkedin{
+  color:white;
+  font-size: 30px;
+  
+}
+/* ===========social link end============= */
+/*=============== footer section start ================ */
+
+/*============= medea quaries start =============== */
+
+/* ===========responsive mobile divice start =============== */
+
+@media only screen and (max-width:688px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .header-info{
+    padding: 5px;
+  }
+  .main-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0px;
+  }
+  .sidebar-menu{
+    margin-left: 30px;
+
+  }
+  .blogs{
+    grid-template-columns: repeat(1, 11fr);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .blog{
+    margin: 0%;
+    padding: 0%;
+  }
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    width: 90%;
+    height: 100vh;
+  }
+  .footer-info{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ===========responsive mobile divice end=============== */
+
+/* ==================rexponsive tab divice start ============================= */
+@media only screen and (min-width:689px) and (max-width:992px) {
+  .container{
+    display: flex;
+  }
+  .header-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-info{
+    width: 50%;
+    padding: 10px;
+  }
+  .main-section{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-menu{
+    background: none;
+    justify-content: space-between;
+  }
+  .sidebar{
+    display:grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .blogs{
+    width: 90%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-btn, .match-btn, .group-btn{
+    margin: 5px;
+    width: 210px;
+    height: 70px;
+  }
+  .footer-info{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-section{
+   width: 800px;
+   height: 500px;
+  }
+  
+}
+
+/* ==================rexponsive tab divice start ============================= */
