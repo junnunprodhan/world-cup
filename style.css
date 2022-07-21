@@ -74,6 +74,7 @@ body{
 
 /*================ main section  start============= */
 .main-section{
+  position: relative;
   display: flex;
   margin-top: 130px;
   margin-bottom: 130px;
@@ -85,6 +86,9 @@ body{
 
 /*============ sidebar start ============== */
 .sidebar-menu{
+  position: sticky;
+  left: 0%;
+  top: 300px;
   height: 312px;
   width: 312px;
   display: flex;
@@ -251,12 +255,14 @@ hr{
     padding: 5px;
   }
   .main-section{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0%;
     padding: 0px;
   }
   .sidebar-menu{
+    position: static;
     margin-left: 30px;
 
   }
@@ -300,11 +306,13 @@ hr{
     padding: 10px;
   }
   .main-section{
+    position: relative;
     margin-top: 0px;
     display: flex;
     flex-direction: column;
   }
   .sidebar-menu{
+    position: static;
     background: none;
     justify-content: space-between;
   }
